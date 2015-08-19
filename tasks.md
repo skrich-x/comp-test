@@ -3,7 +3,7 @@
 
 ## Initial Tasks
 
-- [ ] Download Examples
+- [x] Download Examples
 - [ ] List Deliverables and Project Guidelines
 - [ ] Create Test Repo
 	- [ ] additional Development and Feature Branches
