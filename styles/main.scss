@@ -10,6 +10,10 @@ body {
   color: $base-font-color;
 }
 
+.center-container{
+  @include outer-container(1080px);
+}
+
 ///Header Styling///
 
 header{
@@ -34,6 +38,10 @@ header h1, p{
 
 ///Feature Styling///
 
+.feature-section{
+    font-family: $adelle;
+}
+
 .primary-feature-header{
   color: $app-header-purple;
 }
@@ -44,6 +52,10 @@ header h1, p{
 
 .feature-text{
   color: $feature-gray;
+}
+
+.app-feature{
+  @include span-columns(4);
 }
 
 ////Footer Styling////
