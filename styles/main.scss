@@ -10,9 +10,11 @@ $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $very-light-gray: #fafafa;
-
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
+$pink-border: #c9016a;
+
+@import "colors";
 
 body {
   font-family: $base-font-family;
@@ -22,5 +24,12 @@ body {
 
 header{
   background-image: url("../../assets/images/header-background.png");
+  background-position: 0% 100%;
+  background-size: cover;
   height: 600px;
+  border-bottom: 2px solid $pink-border;
+}
+
+header h1, p{
+  color: #fff;
 }
