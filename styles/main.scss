@@ -1,26 +1,16 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
-// Typography
-$base-font-family: $helvetica;
-
-// Colors
-$blue: #477dca;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
-$very-light-gray: #fafafa;
-$base-font-color: $dark-gray;
-$base-background-color: $very-light-gray;
-$pink-border: #c9016a;
-
 @import "colors";
+@import "typography";
 
 body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
 }
+
+///Header Styling///
 
 header{
   background-image: url("../../assets/images/header-background.png");
@@ -34,8 +24,18 @@ header h1, p{
   color: #fff;
 }
 
+.hero-tagline{
+  font-family: $adelle;
+}
+
+.hero-nav{
+  color: $header-nav;
+}
+
+///Feature Styling///
+
 .primary-feature-header{
-  color: $app-header-purple; 
+  color: $app-header-purple;
 }
 
 .feature-header{
@@ -44,4 +44,17 @@ header h1, p{
 
 .feature-text{
   color: $feature-gray;
+}
+
+////Footer Styling////
+
+footer{
+  background-color: $footer-gray;
+}
+.footer-heading{
+  color: $pink-header;
+}
+
+.location{
+  color: $footer-blue;
 }
