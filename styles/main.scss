@@ -20,6 +20,7 @@ body {
   color: $base-font-color;
 }
 
-html{
-  background-color: $medium-gray;
+header{
+  background-image: url("../../assets/images/header-background.png");
+  height: 600px;
 }
