@@ -5,11 +5,17 @@
 @import "typography";
 @import "mobile";
 
+
+
 body {
   font-family: $base-font-family;
   font-size: 62.5%;
   background-color: $base-background-color;
   color: $base-font-color;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
 }
 
 *, *:after, *:before {
@@ -19,7 +25,7 @@ body {
 }
 
 .center-container{
-  @include outer-container(1200px);
+  @include outer-container(1080px);
 }
 
 ///Header Styling///
@@ -32,14 +38,20 @@ header{
   border-bottom: 2px solid $pink-border;
 }
 
-header h1, p{
+
+.hero-logo{
+  @include span-columns(1);
+  @include shift(5);
+}
+
+.header-main{
   @include span-columns(4);
   @include shift(4);
   color: #fff;
   text-align: center;
 }
 
-span{
+.hero-nav{
   font-size: 1.2em;
 }
 
@@ -56,33 +68,48 @@ span{
   color: $header-nav;
 }
 
+.invite{
+  @include span-columns(4);
+  @include shift(4);
+}
 ///Feature Styling///
 
 .feature-section{
-    font-family: $adelle;
-}
-
-.primary-feature-header{
-  color: $app-header-purple;
-}
-
-.feature-header{
-  color: $pink-header;
-}
-
-.feature-text{
-  color: $feature-gray;
+  font-family: $adelle;
+  margin-top: 5em;
 }
 
 .app-feature{
   @include span-columns(4);
+  margin-right: 0;
+}
+
+.feature-header{
+  color: $pink-header;
+  font-size: 3em;
+}
+
+.feature-text{
+  color: $feature-gray;
+  font-size: 1.4em;
+}
+
+.primary-feature-header{
+  color: $app-header-purple;
+  font-size: 5em;
+}
+.primary-feature-text{
+  color: $feature-gray;
+  font-size: 1.9em;
 }
 
 ////Footer Styling////
 
 footer{
   background-color: $footer-gray;
+  font-size: 2em;
 }
+
 .footer-heading{
   color: $pink-header;
 }
