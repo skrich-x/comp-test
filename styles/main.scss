@@ -81,6 +81,7 @@ header{
 
 .app-feature{
   @include span-columns(4);
+  @include omega(3n);
   margin-right: 0;
 }
 
