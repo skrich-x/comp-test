@@ -1,0 +1,64 @@
+@media (min-width : 320px) and (max-width: 549px){
+
+  .hidden{
+    display: none;
+  }
+
+  ///Header Styling///
+
+  header{
+    background-image: url("../../assets/images/header-background.png");
+    background-position: 0% 100%;
+    background-size: cover;
+    height: 600px;
+    border-bottom: 2px solid $pink-border;
+  }
+
+  header h1, p{
+    color: #fff;
+    text-align: center;
+  }
+
+  .hero-tagline{
+    font-family: $adelle;
+  }
+
+  .hero-nav{
+    color: $header-nav;
+  }
+
+  ///Feature Styling///
+
+  .feature-section{
+      font-family: $adelle;
+  }
+
+  .primary-feature-header{
+    color: $app-header-purple;
+  }
+
+  .feature-header{
+    color: $pink-header;
+  }
+
+  .feature-text{
+    color: $feature-gray;
+  }
+
+  .app-feature{
+    @include span-columns(10);
+  }
+
+  ////Footer Styling////
+
+  footer{
+    background-color: $footer-gray;
+  }
+  .footer-heading{
+    color: $pink-header;
+  }
+
+  .location{
+    color: $footer-blue;
+  }
+}

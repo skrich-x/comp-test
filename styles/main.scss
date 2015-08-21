@@ -3,11 +3,23 @@
 
 @import "colors";
 @import "typography";
+@import "mobile";
 
 body {
   font-family: $base-font-family;
+  font-size: 62.5%;
   background-color: $base-background-color;
   color: $base-font-color;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.center-container{
+  @include outer-container(1200px);
 }
 
 ///Header Styling///
@@ -21,11 +33,23 @@ header{
 }
 
 header h1, p{
+  @include span-columns(4);
+  @include shift(4);
   color: #fff;
+  text-align: center;
+}
+
+span{
+  font-size: 1.2em;
 }
 
 .hero-tagline{
   font-family: $adelle;
+  font-size: 3.8em;
+}
+
+.hero-text{
+  font-size: 1.4em;
 }
 
 .hero-nav{
@@ -33,6 +57,10 @@ header h1, p{
 }
 
 ///Feature Styling///
+
+.feature-section{
+    font-family: $adelle;
+}
 
 .primary-feature-header{
   color: $app-header-purple;
@@ -44,6 +72,10 @@ header h1, p{
 
 .feature-text{
   color: $feature-gray;
+}
+
+.app-feature{
+  @include span-columns(4);
 }
 
 ////Footer Styling////
