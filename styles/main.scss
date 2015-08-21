@@ -127,8 +127,7 @@ input{
 .app-feature{
   @include span-columns(4);
   @include omega(3n);
-  margin-right: 0;
-  padding: 1em;
+  padding: 1.6em;
 }
 
 .feature-header{
@@ -160,8 +159,8 @@ footer{
 }
 
 .footer-section{
-  @include span-columns(3);
-  @include omega(4n);
+  @include span-columns(4);
+  @include omega();
   color: $footer-blue;
   margin-top: 6.5em;
 }
@@ -170,11 +169,20 @@ footer{
   color: $pink-header;
 }
 
+.social-section{
+  @include span-columns(2);
+}
+
 .social{
-  display:block;
+  margin:0;
+}
+
+.location{
+  margin:0;
 }
 
 .copyright{
   @include span-columns(12);
   color: $footer-blue;
+  font-size: .75em;
 }
