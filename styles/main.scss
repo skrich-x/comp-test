@@ -64,7 +64,7 @@ header{
   font-size: 1.2em;
   float:right;
   margin-top: 2.2em;
-
+  text-align: center;
 }
 
 .hero-tagline{
@@ -82,19 +82,32 @@ header{
 }
 
 .invite{
-  @include span-columns(8);
-  @include shift(2);
+  @include span-columns(10);
+  @include shift(1);
   background-color: #fff;
   height: 50px;
 }
 
+input{
+  border: none;
+  font-size: 14px;
+}
+
 .invite-button{
   background-image: url("../../assets/images/submitButton.png");
+  border-radius: 2px;
+  border-style: none;
+  width: 125px;
+  height: 42px;
+  font-size: 14px;
+  margin: 4px;
 }
+
 ///Feature Styling///
 
 .feature-section{
   font-family: $adelle;
+  height:800px;
   margin-top: 5em;
 }
 
@@ -128,14 +141,27 @@ header{
 
 footer{
   background-color: $footer-gray;
-  font-size: 2em;
+  height: 330px;
+  font-size: 1.9em;
+  font-weight: 200;
 }
 
 .footer-section{
   @include span-columns(3);
+  @include omega(4n);
   color: $footer-blue;
+  margin-top: 6.5em;
 }
 
 .footer-heading{
   color: $pink-header;
+}
+
+.social{
+  display:block;
+}
+
+.copyright{
+  @include span-columns(12);
+  color: $footer-blue;
 }
