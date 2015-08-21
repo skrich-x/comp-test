@@ -82,8 +82,14 @@ header{
 }
 
 .invite{
-  @include span-columns(6);
-  @include shift(3);
+  @include span-columns(8);
+  @include shift(2);
+  background-color: #fff;
+  height: 50px;
+}
+
+.invite-button{
+  background-image: url("../../assets/images/submitButton.png");
 }
 ///Feature Styling///
 
