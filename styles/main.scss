@@ -132,21 +132,25 @@ input{
 
 .feature-header{
   color: $pink-header;
-  font-size: 3em;
+  font-size: 1.8em;
+  margin-top:31px;
 }
 
 .feature-text{
   color: $feature-gray;
   font-size: 1.4em;
+  vertical-align: bottom;
 }
 
 .primary-feature-header{
   color: $app-header-purple;
   font-size: 5em;
+  margin-top: 2em;
 }
 .primary-feature-text{
   color: $feature-gray;
   font-size: 1.9em;
+  font-style:italic;
 }
 
 ////Footer Styling////
