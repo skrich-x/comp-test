@@ -190,3 +190,32 @@ footer{
   color: $footer-blue;
   font-size: .75em;
 }
+
+//Sticky Nav Bar //
+
+.s-nav-container{
+  background-color: #2d2d2d;
+  width: 100%;
+  height: 60px;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.s-nav-button{
+  background-image: url("../../assets/images/submitButton.png");
+  top: 50%;
+  transform: translateY(-50%);
+  float:right;
+  display: inline-block;
+  border:none;
+  border-radius: 2px;
+}
+
+.s-logo,
+.s-nav-brand {
+  max-height: 3em;
+}
+
+.s-logo{
+  padding-right: 1em;
+}
