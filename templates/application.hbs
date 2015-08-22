@@ -2,60 +2,73 @@
 
   <header>
     <div class="center-container">
-
       <nav class ="banner-hero">
         <img class="hero-brand" src="assets/images/mattr-brand.png" alt="Mattr Brand Logo" />
         <img class="hero-logo" src="assets/images/mattr-logo.png" alt="Mattr Logo" />
         <span class="hero-nav">BLOG</span>
-        <span class="hero-nav hidden">SIGN IN</span>
       </nav>
 
-      <h1 class="hero-tagline">Personalities</h1>
-      <h1 class="hero-tagline"> tell powerful stories.</h1>
-        <p class="hero-text">
-          The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.
-        </p>
-        <p class="hero-text">GET TO KNOW YOUR AUDIENCE.</p>
-        <p class="hero-text">REQUEST A PRIVATE BETA INVITATION:</p>
-      {{!-- add action to form via PHP --}}
-      <form class="invite" action="signup" method="post">
-        <input type="email" name="email" placeholder="you@email.com">
-        <button type="submit" name="request">Request Invite</button>
-      </form>
-
+      <div class="header-main">
+        <h1 class="hero-heading">Personalities</h1>
+        <h1 class="hero-heading"> tell powerful stories.</h1>
+          <p class="hero-tagline">
+            Mattr brings you the clearest, most colorful picture of your brand audience, allowing you to truly understand who they are and connect with them like never before.
+          </p>
+          <p class="hero-text">Get to know your audience.</p>
+          <p class="hero-text">Request a private beta invitation:</p>
+        {{!-- add action to form via PHP --}}
+        <form class="invite" action="signup" method="post">
+          <input class="email-input" type="email" name="email" placeholder="your@email.com">
+          <button class ="invite-button" type="submit" name="request">Request Invite</button>
+        </form>
+      </div>
     </div>
   </header>
 
 
   <section class="feature-section">
+    {{!-- Include Sticky Nav Bar --}}
+    <nav class="s-nav-container hidden">
+        <div class="s-brand-container">
+          <img class="s-logo" src="../assets/images/mattr-logo.png">
+          <img class="s-nav-brand" src="assets/images/mattr-brand.png">
+        </div>
+        <button class="s-nav-button">Request an invitation</button>
+    </nav>
+
     <div class="center-container">
 
       <div class="app-feature">
         <h2 class="primary-feature-header">The App</h2>
-        <p class="feature-text">Mattr allows you to build a more complete view of your social media audience through a comprehensive set of segmentation, comparison, monitoring, and visualization tools.  Explore our Features to learn more.</p>
+        <p class="primary-feature-text">Mattr allows you to build a more complete view of your social media audience through a comprehensive set of segmentation, comparison, monitoring, and visualization tools.  Explore our Features to learn more.</p>
       </div>
       <div class="app-feature">
-        <img class="feature-image" src="../../assets/images/audience-feature.png" alt="" />
-        <h2 class="feature-header">Audience Personality Segments Decide</h2>
+        <img class="feature-image" src="../../assets/images/audience-border.png" alt="" />
+        <img class="plus-circle" src="../../assets/images/plus-circle.png" alt="" />
+        <h2 class="feature-header">Audience Personality Segments</h2>
         <p class="feature-text">Decide how you want to look at your audience, based on our Unique Personality Type Analysis and demographics.</p>
       </div>
       <div class="app-feature">
-        <img class="feature-image" src="../../assets/images/persona-feature.png" alt="" />
+        <img class="feature-image" src="../../assets/images/persona-border.png" alt="" />
+        <img class="plus-circle" src="../../assets/images/plus-circle.png" alt="" />
         <h2 class="feature-header">Persona Builder</h2>
         <p class="feature-text">Combine Personality Traits and Demographic information to create Audience Personas that make sense for your business.</p>
       </div>
       <div class="app-feature">
-        <img class="feature-image" src="../../assets/images/engagement-feature.png" alt="" />
+        <img class="feature-image" src="../../assets/images/engagement-border.png" alt="" />
+        <img class="plus-circle" src="../../assets/images/plus-circle.png" alt="" />
         <h2 class="feature-header">Engagement Response by Persona</h2>
         <p class="feature-text">Which of your social media activities are attacting the audience engagement you’re looking for? See a segmented report on a per-post basis.</p>
       </div>
       <div class="app-feature">
-        <img class="feature-image" src="../../assets/images/social-feature.png" alt="" />
+        <img class="feature-image" src="../../assets/images/social-border.png" alt="" />
+        <img class="plus-circle" src="../../assets/images/plus-circle.png" alt="" />
         <h2 class="feature-header">Social Brand Benchmarking</h2>
         <p class="feature-text">See how your brand’s audience compares to that of your competition, or your industry. Choose what you want to compare and then view the comparision.</p>
       </div>
       <div class="app-feature">
-        <img class="feature-image" src="../../assets/images/sentiment-feature.png" alt="" />
+        <img class="feature-image" src="../../assets/images/sentiment-border.png" alt="" />
+        <img class="plus-circle" src="../../assets/images/plus-circle.png" alt="" />
         <h2 class="feature-header">Sentiment Variance</h2>
         <p class="feature-text">Knowing that your audience is ‘upbeat’ just isn’t enough. You need to know if they’re more upbeat about your brand than they are about other things.</p>
       </div>
@@ -66,28 +79,33 @@
   <footer>
     <div class="center-container">
       <div class="footer-section">
-        <h3 class="footer-heading">San Fransisco, CA</h3>
-        <span class="location">Rocketspace</span>
-        <span class="location">181 Fremont Street </span>
-        <span class="location">San Francisco, California 94105</span>
+        <h4 class="footer-heading">San Fransisco, CA</h4>
+        <p class="location">Rocketspace</p>
+        <p class="location">181 Fremont Street </p>
+        <p class="location">San Francisco, California 94105</p>
+        <p class="email-us">EMAIL US</p>
       </div>
       <div class="footer-section">
-        <h3 class="footer-heading">Austin, TX</h3>
-        <span class="location">8140 North Mopac Expressway
-        <span class="location">Building 1, Suite 150</span>
-        <span class="location">Austin, Texas 78759</span>
+        <h4 class="footer-heading">Austin, TX</h4>
+        <p class="location">8140 North Mopac Expressway</p>
+        <p class="location">Building 1, Suite 150</p>
+        <p class="location">Austin, Texas 78759</p>
+        <p class="email-us">EMAIL US</p>
       </div>
-      <div class="footer-section">
-        <h3 class="footer-heading">Elsewhere</h3>
-        <span class="social"></span>
-        <span class="social"></span>
-        <span class="social"></span>
+      <div class="footer-section social-section">
+        <h4 class="footer-heading">Elsewhere</h4>
+        <p class="social"><img class="social-icons" src="../../assets/images/twitter.png" alt="" /> Twitter</p>
+        <p class="social"><img class="social-icons" src="../../assets/images/facebook.png" alt="" /> Facebook</p>
+        <p class="social"><img class="social-icons" src="../../assets/images/linkedIN.png" alt="" /> LinkedIn</p>
       </div>
-      <div class="footer-section">
+      <div class="footer-section social-section">
         <h3 class="footer-heading">Company</h3>
-        <span class="social"></span>
-        <span class="social"></span>
-        <span class="social"></span>
+        <p class="social">Sign In</p>
+        <p class="social">Blog</p>
+        <p class="social">FAQ</p>
+      </div>
+      <div class="copyright">
+        <span>© 2013 MATTR. All rights reserved.</span>
       </div>
     </div>
   </footer>

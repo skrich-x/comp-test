@@ -8,8 +8,16 @@
 body {
   font-family: $base-font-family;
   font-size: 62.5%;
-  background-color: $base-background-color;
-  color: $base-font-color;
+  background-color: $background-gray;
+  color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+
+a{
+  text-decoration:none;
 }
 
 *, *:after, *:before {
@@ -19,7 +27,7 @@ body {
 }
 
 .center-container{
-  @include outer-container(1200px);
+  @include outer-container(1080px);
 }
 
 ///Header Styling///
@@ -32,61 +40,186 @@ header{
   border-bottom: 2px solid $pink-border;
 }
 
-header h1, p{
-  @include span-columns(4);
-  @include shift(4);
+.banner-hero img{
+  margin-top: 2.2em;
+}
+
+.hero-brand{
+  float:left;
+}
+
+.hero-logo{
+  @include span-columns(1);
+  @include shift(4.25);
+  padding-top: 10em;
+  padding-bottom:2.5em;
+}
+
+.header-main{
+  @include span-columns(6);
+  @include shift(3);
   color: #fff;
   text-align: center;
 }
 
-span{
+.hero-nav{
   font-size: 1.2em;
+  float:right;
+  margin-top: 2.2em;
+  text-align: center;
 }
 
-.hero-tagline{
+.hero-heading{
   font-family: $adelle;
   font-size: 3.8em;
 }
 
-.hero-text{
+.hero-tagline{
+  margin-bottom: 50px;
   font-size: 1.4em;
+  font-weight: 100;
+}
+
+.hero-text{
+  text-transform: uppercase;
+  font-size: 1.4em;
+  font-weight: 100;
 }
 
 .hero-nav{
   color: $header-nav;
 }
 
+.invite{
+  @include span-columns(10);
+  @include shift(1);
+  background-color: #fff;
+  height: 50px;
+}
+
+input{
+  border: none;
+  font-size: 14px;
+  padding:4px;
+  margin: 4px;
+  height: 42px;
+  width: 60%;
+  color: $feature-gray;
+}
+
+.invite-button{
+  background-image: url("../../assets/images/submitButton.png");
+  border-radius: 2px;
+  border-style: none;
+  width: 125px;
+  height: 42px;
+  font-size: 14px;
+  margin: 4px;
+  float: right;
+}
+
 ///Feature Styling///
 
 .feature-section{
-    font-family: $adelle;
-}
-
-.primary-feature-header{
-  color: $app-header-purple;
-}
-
-.feature-header{
-  color: $pink-header;
-}
-
-.feature-text{
-  color: $feature-gray;
+  font-family: $adelle;
+  height:800px;
 }
 
 .app-feature{
   @include span-columns(4);
+  @include omega(3n);
+  padding: 1.6em;
+}
+
+.feature-header{
+  color: $pink-header;
+  font-size: 1.8em;
+  margin-top:31px;
+}
+
+.feature-text{
+  color: $feature-gray;
+  font-size: 1.4em;
+  vertical-align: bottom;
+}
+
+.primary-feature-header{
+  color: $app-header-purple;
+  font-size: 5em;
+  margin-top: 2em;
+}
+.primary-feature-text{
+  color: $feature-gray;
+  font-size: 1.9em;
+  font-style:italic;
 }
 
 ////Footer Styling////
 
 footer{
   background-color: $footer-gray;
+  height: 330px;
+  font-size: 1.9em;
+  font-weight: 200;
 }
+
+.footer-section{
+  @include span-columns(4);
+  @include omega();
+  color: $footer-blue;
+  margin-top: 6.5em;
+}
+
 .footer-heading{
   color: $pink-header;
 }
 
+.social-section{
+  @include span-columns(2);
+}
+
+.social{
+  margin:0;
+}
+
 .location{
+  margin:0;
+}
+
+.copyright{
+  @include span-columns(12);
   color: $footer-blue;
+  font-size: .75em;
+}
+
+//Sticky Nav Bar //
+.hidden{
+  display: none;
+}
+
+.s-nav-container{
+  background-color: #2d2d2d;
+  width: 100%;
+  height: 60px;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.s-nav-button{
+  background-image: url("../../assets/images/submitButton.png");
+  top: 50%;
+  transform: translateY(-50%);
+  float:right;
+  display: inline-block;
+  border:none;
+  border-radius: 2px;
+}
+
+.s-logo,
+.s-nav-brand {
+  max-height: 3em;
+}
+
+.s-logo{
+  padding-right: 1em;
 }
